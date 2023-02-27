@@ -7,9 +7,9 @@ public class Point {
         double second = y2 - y1;
         double third = Math.pow(first, 2);
         double fourth = Math.pow(second, 2);
-        double fifth = third + fourth;
-        Math.sqrt(fifth);
-        double result = fifth;
+        double sixth = third + fourth;
+        Math.sqrt(sixth);
+        double result = sixth;
         return result;
     }
 
