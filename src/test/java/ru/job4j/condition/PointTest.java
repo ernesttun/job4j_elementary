@@ -37,5 +37,4 @@ public class PointTest {
         double rsl = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(excepted, rsl, 0.01);
     }
-
 }
