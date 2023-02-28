@@ -9,8 +9,8 @@ public class Point {
         double fourth = Math.pow(second, 2);
         double fifth = third + fourth;
         Math.sqrt(fifth);
-        double result = fifth;
-        return result;
+        double rsl = fifth;
+        return rsl;
     }
 
     public static void main(String[] args) {
