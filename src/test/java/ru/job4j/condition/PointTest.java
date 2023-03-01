@@ -28,7 +28,7 @@ public class PointTest {
     }
 
     @Test
-    public void when64To54then() {
+    public void when64To54then5() {
         double excepted = 5;
         int x1 = 6;
         int x2 = 4;
