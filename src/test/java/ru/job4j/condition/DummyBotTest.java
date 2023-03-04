@@ -24,7 +24,7 @@ public class DummyBotTest {
 
     @Test
     public void whenUnknownBot() {
-        String in = "How are you ?";
+        String in = "Can you swim ?";
         String result = DummyBot.answer(in);
         String excepted = "I don't know. Please, ask another question.";
         assertThat(result).isEqualTo(excepted);
