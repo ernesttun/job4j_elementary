@@ -28,7 +28,7 @@ public class MaxTest {
     public void whenIdentical3To3Then3() {
         int left = 3;
         int right = 3;
-        int result = Max.identical(left, right);
+        int result = Max.max(left, right);
         int excepted = 3;
         assertThat(result).isEqualTo(excepted);
     }

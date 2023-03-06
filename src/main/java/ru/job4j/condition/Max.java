@@ -6,15 +6,10 @@ public class Max {
         return result;
     }
 
-    public static int identical(int left, int right) {
-        int result = left == right ? left : right;
-        return result;
-    }
-
     public static void main(String[] args) {
         int result = Max.max(4, 2);
         System.out.println(result);
-        int rsl = Max.identical(5, 5);
-        System.out.println(rsl);
+        result = Max.max(5, 5);
+        System.out.println(result);
     }
 }
