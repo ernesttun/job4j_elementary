@@ -27,11 +27,11 @@ public class SwitchArrayTest {
 
     @Test
     public void whenSwap4To1() {
-        int[] input = {4, 19, 54, 23, 10, 3};
-        int source = 4;
+        int[] input = {4, 19, 54, 23};
+        int source = 3;
         int dest = 1;
         int[] result = SwitchArray.swap(input, source, dest);
-        int[] excepted = {4, 10, 54, 23, 19, 3};
+        int[] excepted = {4, 23, 54, 19};
         assertThat(result).containsExactly(excepted);
     }
 }
