@@ -4,9 +4,7 @@ public class Check {
     public static boolean mono(boolean[] data) {
         boolean rsl = true;
         for (boolean array : data) {
-            if (array == data[0]) {
-                rsl = true;
-            } else {
+            if (array != data[0]) {
                 rsl = false;
                 break;
             }
