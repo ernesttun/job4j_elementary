@@ -8,9 +8,9 @@ public class MinTest {
     @Test
     public void whenFirstMin() {
         int[] array = new int[]{0, 5, 10};
-        int rsl = Min.findMin(array);
+        int result = Min.findMin(array);
         int expected = 0;
-        assertThat(rsl).isEqualTo(expected);
+        assertThat(result).isEqualTo(expected);
     }
 
     @Test
