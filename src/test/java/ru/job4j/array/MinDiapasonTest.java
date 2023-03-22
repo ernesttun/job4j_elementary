@@ -10,9 +10,9 @@ public class MinDiapasonTest {
         int[] array = new int[]{-1, 0, 5, 10};
         int start = 1;
         int finish = 3;
-        int result = MinDiapason.findMin(array, start, finish);
+        int rsl = MinDiapason.findMin(array, start, finish);
         int expected = 0;
-        assertThat(result).isEqualTo(expected);
+        assertThat(rsl).isEqualTo(expected);
     }
 
     @Test
