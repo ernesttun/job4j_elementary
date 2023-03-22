@@ -6,6 +6,7 @@ public class Min {
         for (int i = 1; i < data.length; i++) {
             if (data[i] < min) {
                 min = data[i];
+                break;
             }
         }
         return min;
