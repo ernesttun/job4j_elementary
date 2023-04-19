@@ -1,25 +1,21 @@
 package ru.job4j.exercises;
 
 public class World {
-    public static int maxSum(int[] array) {
-        int maxSum = 0;
-        for (int i = 0; i < array.length; i++) {
-            int num = array[i];
-            int sum = 0;
-            while (num > 0) {
-                sum += num % 10;
-                num /= 10;
-            }
-            if (sum > maxSum) {
-                maxSum = sum;
+    public static void loop(int a, int b) {
+        System.out.println("Старт");
+        for (int i = a; i < b; i++) {
+            if (i >= 10) {
+                System.out.print(i + " ");
             }
         }
-        return maxSum;
-
+        System.out.println("\nФиниш");
     }
 
     public static void main(String[] args) {
-        int[] array = {1, 2, 3};
-        System.out.println(maxSum(array));
+        loop(-16, 15);
     }
 }
+
+
+
+
