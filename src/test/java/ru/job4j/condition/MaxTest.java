@@ -32,4 +32,25 @@ public class MaxTest {
         int excepted = 3;
         assertThat(result).isEqualTo(excepted);
     }
+
+    @Test
+    public void whenMax4To6To8Then8() {
+        int first = 4;
+        int second = 6;
+        int third = 8;
+        int rsl = Max.max(first, second, third);
+        int excepted = 8;
+        assertThat(rsl).isEqualTo(excepted);
+    }
+
+    @Test
+    public void whenMax5To7To9To11Then11() {
+        int first = 5;
+        int second = 7;
+        int third = 9;
+        int fourth = 11;
+        int rsl = Max.max(first, second, third, fourth);
+        int excepted = 11;
+        assertThat(rsl).isEqualTo(excepted);
+    }
 }
