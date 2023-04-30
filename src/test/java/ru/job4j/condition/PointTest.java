@@ -33,4 +33,12 @@ public class PointTest {
         assertThat(rsl).isEqualTo(excepted);
     }
 
+    @Test
+    public void when99To55To64Then2() {
+        int excepted = 2;
+        Point a = new Point(9, 5, 6);
+        Point b = new Point(9, 5, 4);
+        double rsl = a.distance3d(b);
+        assertThat(rsl).isEqualTo(excepted);
+    }
 }
