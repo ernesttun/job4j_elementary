@@ -2,7 +2,7 @@ package ru.job4j.array;
 
 public class SimpleStringEncoder {
     public static String encode(String input) {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         char symbol = input.charAt(0);
         int counter = 1;
 
@@ -10,22 +10,17 @@ public class SimpleStringEncoder {
             if (input.charAt(i) == symbol) {
                 counter++;
             } else {
-                if (counter > 1) {
-                    result += symbol + String.valueOf(counter);
-                } else {
-                    result += symbol;
-                }
+                result.append(getEncode(symbol, counter));
                 symbol = input.charAt(i);
                 counter = 1;
             }
         }
+        result.append(getEncode(symbol, counter));
 
-        if (counter > 1) {
-            result += symbol + String.valueOf(counter);
-        } else {
-            result += symbol;
-        }
+        return String.valueOf(result);
+    }
 
-        return result;
+    public static String getEncode(char symbol, int counter) {
+        return counter > 1 ? symbol + String.valueOf(counter) : String.valueOf(symbol);
     }
 }
